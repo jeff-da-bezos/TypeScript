@@ -160,7 +160,7 @@ namespace ts {
 
             delete(key: string): boolean {
                 if (this.has(key)) {
-                    this.size--;
+                    this.size = this.size - 1;
                     delete this.data[key];
                     return true;
                 }
